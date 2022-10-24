@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: georgia;
+	background: URL('../pics/bg.jpg') #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+.main-header {
+	font-family: Brush Script MT;
+	text-align: center;
+	font-size: 70px;
+	border-top: 2px dashed rgba(0,0,0,.2);
+	border-bottom: 2px dashed rgba(0,0,0,.2);
+	padding: 20px 0;
+	margin: 40px 0;
+	background: rgba(255,255,255,.8);
+	color:   #589846;
+}
+
+main h1 {
+	margin: 0 0 10px 0px;
+	padding: 20px 0;
+	background: rgba(255,255,255,.8);
+	color:   #589846;
+}
+
+aside h2 {
+	padding: 20px 0;
+	text-align: center;
+	background: rgba(255,255,255,.4);
+	color:   #589846;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.content {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+}
+
+nav {
+	background: url('../pics/menu.jpg');
+	flex-basis: 20vw;
+	order: 1;
+}
+
+nav li{
+	border-bottom: 1px dashed rgba(255,255,255,.3);
+}
+
+nav ul {
+	margin: 0;
+	list-style: none;
+	padding: 30px 10px 10px 0;
+}
+
+nav li a {
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+	display: block;
+}
+
+nav a:hover {
+	background: rgba(255,255,255,.5);
+}
+
+main {
+	flex-basis: 60vw;
+	margin: 0 20px;
+	order: 2;
+
+}
+
+.recipes {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.recipe-box {
+	flex: 1;
+	min-width: 250px;
+	background: white;
+	border: 1px solid #ddd;
+	padding: 0 0 10px 0;
+	margin: 0 10px 20px 10px;
+	opacity:0;
+}
+
+.recipe-box h2 {
+	font-size: 18px;
+	padding: 10px 20px 0 20px;
+	margin: 0;
+}
+
+.recipe-box p {
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.pagination {
+	display: flex;
+	margin: 30px 0;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.pagination .page {
+	display: inline-block;
+	padding: 5px 8px;
+	text-decoration: none;
+	background: white;
+	border: 1px solid rgba(0,0,0,.2);
+	color: #8e8f8e;
+	margin: 0 5px 5px 0;
+}
+
+.pagination .page:hover,
+.pagination span.page {
+	background: black;
+	color: white;
+}
+

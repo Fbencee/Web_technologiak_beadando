@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>A világ legfinomabb ételei</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<style>
+	
+	#feedback-form {
+		background: rgba(34,139,34, .7);
+	}
+
+	h3 {
+		margin: 5px;
+		padding: 15px;
+		line-height: 25px;
+	}
+
+	.section {
+		margin: 5px;
+		padding: 20px;
+	}
+	
+	form #send-button{
+		padding: 20px 100px;
+		cursor: pointer;
+	}
+	
+	form #send-button button {
+		border-radius: 10px;
+	}
+
+	
+	.alert {
+		padding: 20px;
+		background-color: #2ec429b9; 
+		color: white;
+		margin-bottom: 15px;
+		display: none;
+	}
+
+	.closebtn {
+		margin-left: 15px;
+		color: white;
+		font-weight: bold;
+		float: right;
+		font-size: 22px;
+		line-height: 20px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.closebtn:hover {
+		color: black;
+	}
+
+	#send-button button {
+		font-size: 18px;
+		background-color: darkgreen;
+		color: white;
+		cursor: pointer;
+	}
+
+	
+</style>
+
+<script src="javascript/FormCheck.js"></script>
+
+<h1 class="main-header">
+	Receptek
+</h1>
+<div class="wrapper">
+	<div class="content">
+		<nav>
+			<ul>
+				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="eloetelek.html">Előételek</a></li>
+				<li><a href="foetelek.html">Főételek</a></li>
+				<li><a href="desszertek.html">Desszertek</a></li>
+				<li><a href="ajanlat.html">Ajánlat</a></li>
+				<li><a href="visszajelzes.html">Visszajelzés</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<h1>Visszajelző űrlap</h1>
+			
+			<form id="feedback-form">
+				<h3>Ez az űrlap egy visszajelzés számunkra, hogy az oldalon található receptek mennyire voltak
+					finomak az elkésztő szerint. Ez az űrlap egy anoním kerdőív, amely a statisztikák miatt lett létre
+					hozva. Töltsd ki!</h3>
+				
+				<ol>
+					<li>
+						<div class="section" id="declare-name">
+							<h5>Név megadása</h5>
+							<label for="fname">Keresztnév:</label><br>
+							<input type="text" id="fname" name="fname" placeholder="Gibsz Jakab"><br>
+							<p id="nameCheck"></p>
+						</div>	
+					</li>
+					<li>
+						<div class="section" id="gender">
+							<h5>Nem megadása</h5>
+							<input type="radio" id="man" name="gender">
+							<label for="man">Férfi</label><br>
+							<input type="radio" id="woman" name="gender">
+							<label for="woman">Nő</label><br>
+							<input type="radio" id="other" name="gender">
+							<label for="other">Egyéb</label>
+							<p id="genderCheck"></p>
+						</div>
+					</li>
+					<li>
+						<div class="section" id="type">
+							<h5>Recept fajták kiválasztása</h5>
+							<input type="checkbox" id="recipe-type1" name="recipe-type1">
+							<label for="recipe-type1">Előétel</label><br>
+							<input type="checkbox" id="recipe-type2" name="recipe-type1">
+							<label for="recipe-type2">Főétel</label><br>
+							<input type="checkbox" id="recipe-type3" name="recipe-type1">
+							<label for="recipe-type3">Desszert</label>
+							<p id="typeCheck"> </p>
+						</div>
+					</li>
+					<li>
+						<div class="section" id="colorChoice">
+							<h5>Étel színének kiválasztása</h5>
+							<input type="color" id="color" name="color" value="null">
+							<p id="colorCheck"></p>
+						</div>
+					</li>
+					<li>
+						<div class="section" id="dateChoice">
+							<h5>Étel elkészítésének a dátuma</h5>
+							<input type="date" id="date" name="trip-start"
+								value="">
+							<p id="dateCheck"></p>
+						</div>
+					</li>
+					<li>
+						<div class="section" id="comment">
+							<h5>Megjegyzés</h5>
+							<textarea id="commentArea" name="comment" rows="10" cols="30" placeholder="Ide írja be az elkészített ételekkel kapcsolatos megfigyeléseit!"></textarea>
+							<p id="commentCheck"></p>
+						</div>
+					</li>
+				</ol>
+				<div id="send-button">
+					<button type="button" id="send-button button" onclick="doneForm()">Beküldés</button>
+				</div>
+			</form>
+			
+			<div class="alert">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				Sikeres kitöltés!
+			</div>
+
+			<div class="pagination">
+				<span class="page">1</span>
+				<a class="page" href="">2</a>
+				<a class="page" href="">3</a>
+				<a class="page" href="">4</a>
+				<a class="page" href="">5</a>
+				<a class="page" href="">6</a>
+				<a class="page" href="">7</a>
+				<a class="page" href="">8</a>
+				<a class="page" href="">9</a>
+				<a class="page" href="">10</a>
+			</div>
+		</main>
+		
+	</div>
+</div>
+
+
+
+</body>
+</html>

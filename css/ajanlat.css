@@ -1,0 +1,25 @@
+table {
+	display: flex;
+	background: rgba(34,139,34, .7);
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 5px 10px 10px rgba(255,255,255,.8);
+}
+
+th {
+	font-size: 20px;
+}
+
+.menu-table th,td {
+	padding: 10px;
+}
+
+.first {
+	border-right: 2px dashed black;
+}
+
+h2 {
+	padding: 20px 0;
+	background: rgba(255,255,255,.5);
+	color:   #589846;
+}

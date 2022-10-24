@@ -1,0 +1,92 @@
+
+aside {
+	flex-basis: 20vw;
+	order: 3;
+
+}
+
+aside ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: rgba(255,255,255,.4);
+}
+
+aside li {
+	padding: 15px 0;
+	border-bottom: 1px dashed rgba(0,0,0,.2);
+}
+
+aside a {
+	display: block;
+	color: #589846;
+	padding: 2px 0;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+aside a:hover {
+	text-decoration: underline;
+}
+
+.cookie-accept {
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	padding: 20px 20px 20px 100px;
+}
+
+.cookie-accept button {
+	background: yellow;
+	color: black;
+	border: 0;
+	float: right;
+	margin-right: 100px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.cookie-accept button:hover {
+	background: green;
+	color: white;
+}
+
+  #scrollToTop {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	font-family: "Arial";
+	align-items: center;
+	justify-content: center;
+	margin-bottom: -12rem;
+	transition: margin-bottom 0.2s;
+  }
+  #scrollToTop.active {
+	margin-bottom: 0;
+  }
+  #scrollToTop:hover {
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+  
+  @keyframes rotate {
+	to {
+	  transform: rotate(2520deg);
+	}
+  }
+
+  #scrollToTop a {
+	text-decoration: none;
+	color:black;
+  }
